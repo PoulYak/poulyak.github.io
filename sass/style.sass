@@ -1,0 +1,141 @@
+*
+  box-sizing: border-box
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+body
+  background-color: #ffffff
+
+.header
+  max-width: 1600px
+  &__title
+    font-size: 22px
+    &:hover
+      color: #4f4e4e
+  &-block
+    display: flex
+    justify-content: space-between
+    padding: 44px 0
+    align-items: flex-end
+  &__link
+    color: #000000
+    transition-duration: .4s
+    
+    &:hover
+      
+      text-decoration: none
+.list
+  &-pages
+    display: flex
+    justify-content: space-around
+    width: 250px
+  &__item
+    font-size: 15px
+    &:hover
+      color: #00ff00
+
+  
+
+
+
+.main
+  max-width: 1600px
+  display: flex
+  flex-wrap: wrap
+  &-text
+    font-size: 24px
+
+    transition-duration: .4s
+    opacity: 0
+    position: absolute
+    z-index: 2
+  &_block
+    
+    padding: 0
+    color: #ffffff
+    height: 30vw
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    background-position: center center
+    background-size: cover
+    &::before
+      content: ''
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: #000000
+      z-index: 1
+      opacity: 0.4
+      transition-duration: .4s
+
+
+    &:hover
+      cursor: pointer
+      .main-text
+        opacity: 1
+      &::before
+        top: 0
+    &:nth-child(1)
+      background-color: #00ff3c
+      background-image: url(https://play-lh.googleusercontent.com/zrWrE-GWcMz6IJJ9TNTAwsaFuhhxZylBjOVmV0O_NR9cabhXChU9TyOun4xKFwIVGTY)
+    &:nth-child(2)
+      background-color: #f700ff
+      // background-image: url(https://lh3.googleusercontent.com/proxy/H8sBzCFthpzfAzJ2OvqhMv-crrpPkdF3zIMhRtQ3ISQpBwOOSCzEFWHoYPwn-u0e2LqzoQw3jx0-0QKcWafow6dLWZ8Q6lpJhVZbFHSq)
+    &:nth-child(3)
+      background-color: #ff0037
+      // background-image: url(https://lh3.googleusercontent.com/proxy/Pn7Ftvjs2UlJ86TVf-XE_EhTqqfgaw8JIp045tXdIW9JBo8Sy4yZNWvBYtbswafEWFthoqgYwPz9YpK3iZHx_FuwOvXGdOriWY1wtu6VoLIoslg3MEPOHuaP5YT8vFaG9bWlQAX8G5UKf9dHbXsfehlnIjYrraSGvwWLVaexr9F6-w)
+    &:nth-child(4)
+      background-color: #fff700
+      // background-image: url(https://pythonforfinance.net/wp-content/uploads/2019/07/Jupyter.jpg)
+    &:nth-child(5)
+      background-color: #00ff08
+    &:nth-child(6)
+      background-color: #00ffee
+      // background-image: url(https://www.tissotwatches.com/media/catalog/product/cache/aaadd316e453df5b08f7f4246fad1a9c/T/1/T116.617.37.051.00.png)
+    
+
+.my_container
+  padding: 0 50px
+
+
+@media ( max-width: 840px )
+  .my_container
+    padding: 0
+  .header
+    &-block
+      flex-direction: column
+      align-items: center
+      height: 170px
+      
+
+@media (min-width: 0 ) and (max-width: 576px )
+  .main
+    &_block
+      height: 100vw
+
+@media (min-width: 576px ) and ( max-width: 992px )
+  .main
+    &_block
+      height: 50vw
+
+@media ( min-width: 992px )
+  .main
+    &_block
+      height: 33vw
+
+
+@media ( min-width: 1600px )
+  .main
+    margin: auto
+    &_block
+      height: 520px
+  .header
+    margin: auto
+  
+
+
+  
+
+
